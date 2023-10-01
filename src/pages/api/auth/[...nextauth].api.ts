@@ -9,7 +9,7 @@ export function buildNextAuthOptions(
   res: NextApiResponse | NextPageContext['res'],
 ): NextAuthOptions {
   return {
-    adapter: PrismaAdapter(req, res),
+   // adapter: PrismaAdapter(req, res),
 
     providers: [
       GoogleProvider({
