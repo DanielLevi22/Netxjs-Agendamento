@@ -8,5 +8,15 @@ declare module 'next-auth' {
     username: string
     avatar_url: string
   }
+  export interface Session {
+    user: {
+      id: string
+      name: string
+      email: string
+      username: string
+      avatar_url: string
+    }
+  }
+
 
 }
