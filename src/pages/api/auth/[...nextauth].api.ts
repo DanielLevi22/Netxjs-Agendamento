@@ -9,7 +9,7 @@ export function buildNextAuthOptions(
   res: NextApiResponse | NextPageContext['res'],
 ): NextAuthOptions {
   return {
-   // adapter: PrismaAdapter(req, res),
+    adapter: PrismaAdapter(req, res),
 
     providers: [
       GoogleProvider({
@@ -24,7 +24,7 @@ export function buildNextAuthOptions(
         profile(profile: GoogleProfile) {
           return {
             id: profile.sub,
-            name: profile.name,
+            name: profile.name, 
             username: '',
             email: profile.email,
             avatar_url: profile.picture,
