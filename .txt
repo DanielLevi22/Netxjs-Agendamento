@@ -5,3 +5,5 @@ npm i next-auth
 
 creating Container docker
 docker run --name mysqlcall -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest
+npm i googleapis
+npm i next-seo
